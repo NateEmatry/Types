@@ -9,9 +9,19 @@
 
 using Types;
 
+// Using statement for a static class.
+// Lets you invoke methods without the class name (explicit qualification)
+using static Types.DumbMath;
+
+
 Console.WriteLine();
 
 var myClass = new FirstClass();
 int result = myClass.GetNextValue();
 Console.WriteLine($"Next value: {result}");
 myClass.PrintPhrase();
+
+
+// Don't need the DumbMath class name here because of our above using statement
+int value = 6;
+Console.WriteLine($"{value} times 2 is {TimesTwo(value)}");
