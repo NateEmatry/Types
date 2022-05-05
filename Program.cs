@@ -25,3 +25,7 @@ myClass.PrintPhrase();
 // Don't need the DumbMath class name here because of our above using statement
 int value = 6;
 Console.WriteLine($"{value} times 2 is {TimesTwo(value)}");
+
+var myGreen = new ColorRGB(50, 200, 50);
+
+Console.WriteLine($"My green in hex: {myGreen}");

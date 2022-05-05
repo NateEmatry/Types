@@ -48,8 +48,8 @@ namespace Types
     // Static class
     public static class DumbMath {
 
-        private static int _TwoValue = 2;
-        private static int _ThreeValue = 3;
+        private const int _TwoValue = 2;
+        private const int _ThreeValue = 3;
 
         public static int TimesTwo(int val) {
 
