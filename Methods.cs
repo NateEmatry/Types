@@ -13,8 +13,19 @@ namespace Types
             return quotient / divisor;
         }
 
-        // Ref arguments
+        // Ref arguments: Passing in a reference to a value type like &ref in C.
+        // Note: A reference cannot live longer than the variable it refers to.
+        public static string AppendInBed(ref string s) {
 
+            s += " in bed";
+            return s;
+        }
+
+        // In parameter: A read-only reference.
+        public static void PrintPlusOne(in int x) {
+
+            Console.WriteLine($"{x} plus one equals {x + 1}");
+        }
 
     }
 
