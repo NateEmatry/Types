@@ -38,3 +38,13 @@ Console.WriteLine($"{q} / {d} = {MethodsDemo.Divide(q, d, out r)}, remainder = {
 // Putting the out parameter's result into a new variable
 int q2 = MethodsDemo.Divide(20, 7, out int r2);
 Console.WriteLine($"20 divided by 7 is {q2} mod {r2}");
+
+var pDemo = new PropsDemo();
+Console.WriteLine($"\n\nPoint: ({pDemo.pt.x} , {pDemo.pt.y})");
+Console.WriteLine($"Setting point to (10, 11):");
+pDemo.pt = (10, 11);
+Console.WriteLine($"New Point: ({pDemo.pt.x} , {pDemo.pt.y})");
+
+var iDemo = new IndexerDemo();
+
+Console.WriteLine($"\n\nIndexer demo: 3 = {iDemo[3]}, 12 = {iDemo[12]}");

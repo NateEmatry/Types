@@ -2,6 +2,8 @@ namespace Types
 {
     public class ExampleClass {
 
+        #pragma warning disable CS0169
+
         // ***Fields*** 
 
         private int _myInt;

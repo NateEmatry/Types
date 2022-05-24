@@ -14,6 +14,9 @@ namespace Types
 
          public static void NullContextExample() {
 
+            #pragma warning disable CS8600             
+            #pragma warning disable CS8602             
+
              // Enabling the nullable annotation context.
              // With this feature enabled, a reference type cannot be null
              // unless explicitly defined as a nullable reference.
