@@ -48,3 +48,13 @@ Console.WriteLine($"New Point: ({pDemo.pt.x} , {pDemo.pt.y})");
 var iDemo = new IndexerDemo();
 
 Console.WriteLine($"\n\nIndexer demo: 3 = {iDemo[3]}, 12 = {iDemo[12]}");
+
+
+var Monday = Breakfast.Oats | Breakfast.Sugar | Breakfast.Berries;
+var Tuesday = Breakfast.Almondmilk | Breakfast.Berries | Breakfast.Toast;
+var Thursday = Breakfast.Eggs | Breakfast.Toast | Breakfast.Berries;
+var Everyday = Breakfast.Coffee | Breakfast.Sugar | Breakfast.Almondmilk;
+Console.WriteLine("Breakfast on Monday/Wednesday/Saturday: " + Monday.ToString());
+Console.WriteLine("Breakfast on Tuesday/Friday: " + Tuesday.ToString());
+Console.WriteLine("Breakfast on Thursday/Sunday: " + Thursday.ToString());
+Console.WriteLine("Every day: " + Everyday.ToString());
